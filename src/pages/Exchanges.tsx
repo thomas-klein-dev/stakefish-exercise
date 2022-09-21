@@ -1,5 +1,11 @@
+import ExchangeProvider from "../context/ExchangeProvider";
+
 function Exchanges() {
-  return <div>Exchanges</div>;
+  return (
+    <ExchangeProvider>
+      <div>Exchanges</div>
+    </ExchangeProvider>
+  );
 }
 
 export default Exchanges;
