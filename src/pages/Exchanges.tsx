@@ -1,10 +1,15 @@
+import { ExchangesHeader, ExchangesList } from "../components";
 import ExchangeProvider from "../context/ExchangeProvider";
+import SearchProvider from "../context/SearchProvider";
 
 function Exchanges() {
   return (
-    <ExchangeProvider>
-      <div>Exchanges</div>
-    </ExchangeProvider>
+    <SearchProvider>
+      <ExchangeProvider>
+        <ExchangesHeader />
+        <ExchangesList />
+      </ExchangeProvider>
+    </SearchProvider>
   );
 }
 
